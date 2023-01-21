@@ -1,5 +1,7 @@
 <template>
-  <QRCode/>
+  <div class="main-container">
+    <QRCode/>
+  </div>
 </template>
 
 <script>
@@ -14,4 +16,22 @@ export default {
 </script>
 
 <style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#app {
+  background-color: #D5E1EF;
+}
+</style>
+
+<style scoped>
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 </style>
